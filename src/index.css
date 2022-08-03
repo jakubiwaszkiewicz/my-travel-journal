@@ -1,13 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,100;1,400&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Lato', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+nav {
+  color: whitesmoke;
+  width: 100%;
+  background: #F55A5A;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+  box-shadow: 0 0 1em dimgrey;
+  margin-bottom: 3em;
+  font-size: 1.2rem;
+}
+
+nav h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card--container {
+  max-width: 1200px;
+  width: 90%;
+  align-self: center;
+}
+
+.card {
+  display: flex;
+  margin-bottom: 2em;
+  justify-content: center;
+  align-items: center;
+}
+
+.card img {
+  display: block;
+  max-width: 500px;
+  border-radius: 5em;
+  width: 50%;
+  margin-right: 2em;
+}
+
+.card text {
+  display: flex;
+  max-width: 500px;
+}
+
+.card--icon {
+  color: #F55A5A;
+}
+
+.card--pin {
+  color: grey;
+}
+
+.card h1 {
+  font-size: 2em;
 }
